@@ -1,0 +1,52 @@
+<html>
+
+<head></head>
+
+<body>
+
+<div> Please Select Fruit 
+    <br>
+    <select id="fruit" onchange="doSomething()">
+        <option>
+            Apple Smit
+        </option>
+        <option>
+            Apple Pink
+        </option>
+
+        <option>
+            Apple Hermon
+        </option>
+
+        <option>
+            Banana
+        </option>
+        
+    </select>
+</div>
+<br>
+<div> Weight in kg.
+    <br>
+    <input type="text" id="kg" />
+</div>  
+<br>
+<div>
+    <button onclick="calcSum()">Total</button>
+</div>
+
+    <input type="text" id="Total">
+    
+    <script>
+
+        function calcSum() {
+            const fruit = document.getElementById('fruit').value
+            console.log(fruit)
+        }
+        function doSomething() {
+            console.log('select click')
+        }
+
+    </script>
+</body>
+
+</html>
